@@ -3,9 +3,16 @@ import { Link } from 'react-router-dom';
 import { ImOffice } from'react-icons/im';
 import { ImLocation } from'react-icons/im';
 
-const JobRow = ({job}) => {
+const ExperiencedJobRow = ({job}) => {
     return (
         <tr>
+            <td>
+            <div className="avatar">
+              <div className="mask mask-squircle w-12 h-12">
+                <img src={job.companyImg} alt="company logo" />
+              </div>
+            </div>
+            </td>
         <td  key={job._id} className=''>
             <Link>{job.positionName}</Link>
             <p className='flex items-center text-[10px] text-[#000000cf]'><span className='mr-1'><ImOffice color='gray'/></span>{job.companyName}</p>
@@ -16,4 +23,4 @@ const JobRow = ({job}) => {
     );
 };
 
-export default JobRow;
+export default ExperiencedJobRow;

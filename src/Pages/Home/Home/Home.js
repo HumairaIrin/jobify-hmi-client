@@ -5,6 +5,7 @@ import { MdFindInPage } from 'react-icons/md';
 import useTitle from '../../../hooks/useTitle';
 import Browse from '../Browse/Browse';
 import FreshersJob from '../FreshersJob/FreshersJob';
+import ExperiencedJob from '../ExperiencedJob/ExperiencedJob';
 
 const Home = () => {
     useTitle('Home');
@@ -46,6 +47,9 @@ const Home = () => {
            </div>
            <div className='absolute top-[120%] left-[10%] w-4/5 mx-auto'>
            <FreshersJob></FreshersJob>
+           </div>
+           <div className='absolute top-[205%] lg:top-[255%] left-[10%] w-4/5 mx-auto'>
+          <ExperiencedJob></ExperiencedJob>
            </div>
         </section>
     );
