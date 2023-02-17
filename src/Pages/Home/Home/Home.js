@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import banner from '../../../images/Banner.jpg';
 import { BsFilePostFill } from 'react-icons/bs';
 import { MdFindInPage } from 'react-icons/md';
+import useTitle from '../../../hooks/useTitle';
 
 const Home = () => {
+    useTitle('Home');
     const [isJobSeeker, setIsJobSeeker] = useState(false);
     const togglePerson = () =>{
         setIsJobSeeker(!isJobSeeker);
