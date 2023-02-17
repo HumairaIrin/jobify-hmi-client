@@ -31,32 +31,12 @@ const SignUp = () => {
                     .then(() => { })
                     .catch(error => console.error(error))
                     navigate('/');
-                // saveUser(data.name, data.email, data.accountType)
             })
             .catch(error => {
                 console.error(error)
                 setSignUpError(error.message);
             })
     }
-    // const saveUser = (name, email, accountType) => {
-    //     const user = {
-    //         name,
-    //         email,
-    //         accountType
-    //     }
-    //     fetch('https://resale-market-server-psi.vercel.app/user', {
-    //         method: 'POST',
-    //         headers: {
-    //             'content-type': 'application/json'
-    //         },
-    //         body: JSON.stringify(user)
-    //     })
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             console.log(data)
-    //             navigate('/');
-    //         })
-    // }
 
     return (
         <section className='md:h-[90vh] flex flex-col md:flex-row items-center justify-evenly'>
